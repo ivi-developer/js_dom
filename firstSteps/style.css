@@ -11,6 +11,7 @@ body{
     margin: 0 auto;
     padding: 60px 0;
     transition: transform 1s;
+    text-align: center;
 }
 #title{
     font-size: 3rem;
@@ -25,10 +26,12 @@ body{
 .hide{
     transform: scale(0);
 }
-.formulario{
+/* .formulario{
     padding-top: 2rem;
-}
+} */
 .section, #bgColor{
+    width: 90%;
+    max-width: 1200px;
     background-color: rebeccapurple;
     border: 2px solid #ff5e00;
     border-radius: 10px;
@@ -49,6 +52,14 @@ button{
     border: none;
     background-color: wheat;
     padding: 1rem 2rem;
+    border: 2px solid #ff5e00;
     border-radius: 30px;
     cursor: pointer;
+}
+button:hover{
+    filter: blur(1px);
+}
+button:active{
+    filter: none;
+    box-shadow: inset 0px 0px 12px 4px rgba(0,0,0,0.75);
 }
