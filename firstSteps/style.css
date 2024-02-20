@@ -26,9 +26,6 @@ body{
 .hide{
     transform: scale(0);
 }
-/* .formulario{
-    padding-top: 2rem;
-} */
 .section, #bgColor{
     width: 90%;
     max-width: 1200px;
