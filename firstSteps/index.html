@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title>
+</head>
+<body>
+    <main id="wrapper">
+        <h1 id="title">Bienvenido, <span data-id="userName">usuario</span>!</h1>
+        <form class="formulario">
+            <input type="text" id="newNameInput" placeholder="Ingrasa tu nombre">
+            <input type="submit">
+        </form>
+    </main>
+    <section id="showHide" class="section">
+        <button class="showB">Mostrar seccion</button>
+        <button class="hideB">Ocultar seccion</button>
+    </section>
+    <section id="bgColor">
+        <button class="colorButton" data-color="darkgreen">Cambia a darkgreen</button>
+        <button class="colorButton" data-color="hotpink">Cambia a hotpink</button>
+        <button class="colorButton" data-color="steelblue">Cambia a steelblue</button>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
