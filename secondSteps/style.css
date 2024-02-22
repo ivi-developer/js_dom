@@ -30,10 +30,10 @@ body{
     inset: 0;
     background-color: black;
     transition: opacity .3s;
-    pointer-events: unset;
+    pointer-events: none;
     opacity: 0;
 }
-.hide_modal{
+.show{
     pointer-events: unset;
     opacity: 1;
 }
@@ -48,4 +48,33 @@ body{
     margin: auto;
     padding: 2rem;
     text-align: center;
+}
+.modal_close{
+    background-color: darkred;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 23px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+}
+.modal_figure{
+    width: 90%;
+    margin: auto;
+}
+.modal_title{
+    font-size: 2rem;
+}
+.modal_anchor{
+    text-decoration: none;
+    margin-top: 1rem;
+}
+.modal_img:hover{
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+}
+.modal_img:active{
+    filter: drop-shadow(0 0 10px rgba(177, 160, 12, 0.979));
 }
