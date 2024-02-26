@@ -43,7 +43,8 @@ body{
     display: grid;
     gap: 1rem;
     background-color: white;
-    width: 90%;
+    width: 90vw;
+    height: 90vh;
     max-width: 600px;
     margin: auto;
     padding: 2rem;
