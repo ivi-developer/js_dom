@@ -57,7 +57,7 @@ li{
     margin-bottom: 0.5rem;
     max-width: 450px;
     display: flex;
-    overflow:scroll;
+    overflow:overlay;
     flex-wrap: nowrap;
     gap: 10px;
 }
