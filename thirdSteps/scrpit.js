@@ -17,9 +17,12 @@ function crearTarea(value){
     const nuevaTarea=document.createElement("li");
     nuevaTarea.textContent=value;
     tareaLista.appendChild(nuevaTarea);
-    borrarTarea(nuevaTarea);
+    const nuevoButton=document.createElement('button');
+    nuevoButton.textContent='x';
+    nuevaTarea.appendChild(nuevoButton);
+    borrarTarea(nuevoButton);
 }
 function borrarTarea(e){
     message();
-    e.addEventListener('dblclick',()=>{e.remove();message();});
+    e.addEventListener('click',()=>{e.parentNode.remove();message();});
 }

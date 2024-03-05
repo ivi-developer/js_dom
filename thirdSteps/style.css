@@ -54,5 +54,18 @@ body{
     margin-left: 25%;
 }
 li{
-    margin-bottom: 0.5rem
+    margin-bottom: 0.5rem;
+    max-width: 450px;
+    display: flex;
+    overflow: auto;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+li button{
+    margin-left: auto;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 99, 71, 0.815);
 }
