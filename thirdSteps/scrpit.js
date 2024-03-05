@@ -9,8 +9,11 @@ function message(){
 } 
 function handleSubmit(e){
     e.preventDefault();
-    crearTarea(tareaInput.value);
-    form.reset();
+    console.log(tareaInput.value.length);
+    if(tareaInput.value.length>3){
+        crearTarea(tareaInput.value);
+        form.reset();
+    }
 }
 form.addEventListener('submit', handleSubmit);
 function crearTarea(value){
