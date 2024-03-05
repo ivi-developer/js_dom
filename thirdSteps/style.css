@@ -12,6 +12,7 @@ body{
     padding: 60px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .form{
     width: 90%;
@@ -47,18 +48,29 @@ body{
 .tareaLista{
     display: flex;
     flex-direction: column;
-    margin-left: 25%;
+    padding: 0;
 }
 .tareaListaTitulo{
     margin-bottom: 1rem;
-    margin-left: 25%;
+}
+@media (max-width:1000px){
+    .list{
+        gap: 1rem;
+        width: auto;
+    }
+    .tareaButton{
+        padding: 0 1rem;
+        font-size: small;
+    }
+    .tareaInput{
+        padding: 5px;
+        font-size: small;
+    }
 }
 li{
     margin-bottom: 0.5rem;
-    max-width: 450px;
     display: flex;
     overflow:overlay;
-    flex-wrap: nowrap;
     gap: 10px;
 }
 li button{
@@ -68,4 +80,10 @@ li button{
     border: none;
     border-radius: 50%;
     background-color: rgba(255, 99, 71, 0.815);
+}
+.bodyList{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
 }
