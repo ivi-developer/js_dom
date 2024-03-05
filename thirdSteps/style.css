@@ -45,6 +45,9 @@ body{
     border-radius: 10px;
     font-size: medium;
 }
+.tareaButton:hover{
+    cursor:pointer;
+}
 .tareaLista{
     display: flex;
     flex-direction: column;
